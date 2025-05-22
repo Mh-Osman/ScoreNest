@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="coverphoto.css">
+    <link rel="stylesheet" href="card_section.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <script src="my.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="logoo.png" alt="ScoreNest" class="logo-img" />
+                <span>ScoreNest</span>
+            </a>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="cover-photo">
+        <h1>Welcome to ScoreNest Portal</h1>
+    </section>
+    <section class="all">
+
+        <!-- Institution Section -->
+        <section class="section" onclick="openForm('institutionForm')"> <!-- for institution -->
+
+            <div class="section-content">
+                <img src="school.jpg" alt="Institution" class="section-img">
+                <div class="text">
+                    <h2>Institution</h2>
+                    <p>Explore affiliated institutions, their profiles, and academic performance.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Student Section -->
+        <section class="section" onclick="openForm('studentForm')"> <!-- for student -->
+            <div class="section-content">
+                <img src="students.jpg" alt="Student" class="section-img">
+                <div class="text">
+                    <h2>Student</h2>
+                    <p>Access individual student results, rankings, and performance analytics.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Announcement Section -->
+        <section class="section">
+            <div class="section-content">
+                <img src="announcment.jpg" alt="Announcement" class="section-img">
+                <div class="text">
+                    <h2>Announcement</h2>
+                    <p>Latest news, updates, and notifications directly from the ScoreNest portal.</p>
+                </div>
+            </div>
+        </section>
+
+
+    </section>
+
+    <!-- Institution Form Modal -->
+    <div class="modal" id="institutionForm">
+        <div class="modal-content">
+            <span class="close" onclick="closeForm('institutionForm')">&times;</span>
+            <h2>Institution Form</h2>
+            <form>
+                <label>Institution Name:</label><br>
+                <input type="text" required><br><br>
+                <label>Email:</label><br>
+                <input type="email" required><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Student Form Modal -->
+    <div class="modal" id="studentForm">
+        <div class="modal-content">
+            <span class="close" onclick="closeForm('studentForm')">&times;</span>
+            <h2>Student Form</h2>
+            <form>
+                <label>Student Name:</label><br>
+                <input type="text" required><br><br>
+                <label>Roll No:</label><br>
+                <input type="text" required><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2025 ScoreNest. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
